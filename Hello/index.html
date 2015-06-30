@@ -9,20 +9,22 @@
 <body ng-app="myApp">
   <h1>Angularの基礎１</h1>
   <div ng-controller="HelloController">
+    <!-- {{}} Expression Markup -->
     <h2>{{explain}}</h2>
     <p>{{word}}</p>
+    <!-- ng-click:go to action when click event -->
     <button ng-click="action()">openWindow</button>
   </div>
   <div ng-controller="ByeByeController">
     <h2 ng-bind="explain"></h2>
     <p ng-bind="word"></p>
-    <button ng-click="action()">押して</button>
+    <button ng-click="action()">toggle</button>
   </div>
   <div ng-controller="RepeatController">
     <h2>{{explain}}</h2>
     <input ng-model="word">
     <p>{{word}}</p>
-    <button ng-click="action()">押して</button>
+    <button ng-click="action()">alert</button>
   </div>
 </body>
 </html>
